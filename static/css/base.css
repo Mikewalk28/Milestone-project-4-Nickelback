@@ -16,6 +16,9 @@ body {
     font-style: normal;
 }
 
+#header {
+    background-color: #ff003a;
+}
 /* from Bulma */
 .icon {
     align-items: center;
