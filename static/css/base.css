@@ -16,9 +16,7 @@ body {
     font-style: normal;
 }
 
-#header {
-    background-color: #ff003a;
-}
+
 /* from Bulma */
 .icon {
     align-items: center;
@@ -53,7 +51,7 @@ body {
 .btn-black:hover,
 .btn-black:active,
 .btn-black:focus {
-    background: red;
+    background: #ff003a;
     color: white;
 }
 
