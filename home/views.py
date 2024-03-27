@@ -12,7 +12,7 @@ def index(request):
 
 
 class AddUserReview(LoginRequiredMixin, SuccessMessageMixin, generic.CreateView):
-    """This view is used to allow logged in users to create a recipe"""
+    """This view is used to allow logged in users to create a review"""
     form_class = UserReviewForm
     template_name = 'add_userreview.html'
     success_message = "%(calculated_field)s was created successfully"
@@ -20,7 +20,7 @@ class AddUserReview(LoginRequiredMixin, SuccessMessageMixin, generic.CreateView)
     def form_valid(self, form):
         """
         This method is called when valid form data has been posted.
-        The signed in user is set as the author of the recipe.
+        The signed in user is set as the author of the review.
         """
         form.instance.user = self.request.user
         return super().form_valid(form)
@@ -28,7 +28,7 @@ class AddUserReview(LoginRequiredMixin, SuccessMessageMixin, generic.CreateView)
     def get_success_message(self, cleaned_data):
         """
         This function overrides the get_success_message() method to add
-        the recipe title into the success message.
+        the review title into the success message.
         source: https://docs.djangoproject.com/en/4.0/ref/contrib/messages/
         """
         return self.success_message % dict(
@@ -39,12 +39,11 @@ class AddUserReview(LoginRequiredMixin, SuccessMessageMixin, generic.CreateView)
 
 class UserReviewDetail(View):
     """
-    This view is used to display the full recipe details including comments.
-    It also includes the comment form and add to meal plan form
+    This view is used to display the full review details including comments.
     """
     def get(self, request, pk):
         """
-        Retrives the recipe and related comments from the database
+        Retrives the review and related comments from the database
         """
         queryset = UserReview.objects.all()
         review = get_object_or_404(queryset, pk=pk)
@@ -57,3 +56,31 @@ class UserReviewDetail(View):
                 "review": review,
             },
         )
+
+
+class DeleteReview(
+        LoginRequiredMixin, UserPassesTestMixin, generic.DeleteView):
+    """
+    This view is used to allow logged in users to delete their own review
+    """
+    model = UserReview
+    template_name = 'delete_review.html'
+    success_message = "Review deleted successfully"
+    
+
+    def test_func(self):
+        """
+        Prevent another user from deleting other's reviews
+        """
+        recipe = self.get_object()
+        return review.author == self.request.user
+
+    def delete(self, request):
+        """
+        This function is used to display sucess message given
+        SucessMessageMixin cannot be used in generic.DeleteView.
+        Credit: https://stackoverflow.com/questions/24822509/
+        success-message-in-deleteview-not-shown
+        """
+        messages.success(self.request, self.success_message)
+        return super(DeleteReview, self).delete(request)
