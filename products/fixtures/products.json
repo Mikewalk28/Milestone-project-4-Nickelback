@@ -1,0 +1,16 @@
+[
+    {
+      "pk": 1,
+      "model": "products.product",
+      "fields": {
+        "sku": "pp5001340155",
+        "name": "Curb Album T-shirt",
+        "description": "Loose fitting tee, displaying the first ever album cover!",
+        "price": 19.99,
+        "category": 1,
+        "rating": 4.6,
+        "image_url": "/workspaces/Milestone-project-4-Nickelback/media/curb_tee.jpg",
+        "image": "curb_tee.jpg"
+      }
+    }
+]

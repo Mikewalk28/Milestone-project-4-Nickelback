@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-80d7x=0as3luflm8#c#t%sa3m#c($rx!xyhqj0oidegg32nqa0
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['8000-mikewalk28-milestone-pro-d9eqe3tdao.us1.codeanyapp.com']
+ALLOWED_HOSTS = ['8000-mikewalk28-milestone-pro-e8i0ewcp3g.us1.codeanyapp.com']
 
 
 # Application definition
@@ -42,6 +42,7 @@ INSTALLED_APPS = [
     'allauth.account',
     'allauth.socialaccount',
     'home',
+    'products',
 ]
 
 MIDDLEWARE = [
