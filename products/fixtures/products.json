@@ -18,7 +18,7 @@
       "fields": {
         "sku": "pp5001340156",
         "name": "All The Right Reasons",
-        "description": "Nickelbacks fourth, multi platinum album!",
+        "description": "Nickelbacks fifth, multi platinum album!",
         "price": 9.99,
         "category": 4,
         "image_url": "/workspaces/Milestone-project-4-Nickelback/media/alltherightreasons_cd.jpg",
@@ -31,7 +31,7 @@
       "fields": {
         "sku": "pp5001340157",
         "name": "All The Right Reasons - Vinyl",
-        "description": "Nickelbacks fourth, multi platinum album! (Who says Vinyl is dead?!)",
+        "description": "Nickelbacks fifth, multi platinum album! (Who says Vinyl is dead?!)",
         "price": 12.99,
         "category": 4,
         "image_url": "/workspaces/Milestone-project-4-Nickelback/media/alltherightreasons_vinyl.jpg",
@@ -42,7 +42,7 @@
       "pk": 4,
       "model": "products.product",
       "fields": {
-        "sku": "pp5001340155",
+        "sku": "pp5001340158",
         "name": "Nickelback Buttons",
         "description": "Nickelback decorative Buttons",
         "price": 6.99,
@@ -55,7 +55,7 @@
       "pk": 5,
       "model": "products.product",
       "fields": {
-        "sku": "pp5001340155",
+        "sku": "pp5001340159",
         "name": "Curb",
         "description": "Nickelbacks first album!",
         "price": 9.99,
@@ -63,5 +63,304 @@
         "image_url": "/workspaces/Milestone-project-4-Nickelback/media/curb_cd.jpg",
         "image": "curb_cd.jpg"
       }
+    },
+    {
+      "pk": 6,
+      "model": "products.product",
+      "fields": {
+        "sku": "pp5001340160",
+        "name": "Dark Horse",
+        "description": "Nickelbacks sixth studio album!",
+        "price": 9.99,
+        "category": 4,
+        "image_url": "/workspaces/Milestone-project-4-Nickelback/media/darkhorse_cd.jpg",
+        "image": "darkhorse_cd.jpg"
+      }
+    },
+    {
+      "pk": 7,
+      "model": "products.product",
+      "fields": {
+        "sku": "pp5001340161",
+        "name": "Feed The Machine",
+        "description": "Nickelbacks ninth studio album!",
+        "price": 9.99,
+        "category": 4,
+        "image_url": "/workspaces/Milestone-project-4-Nickelback/media/feedthemachine_cd.jpg",
+        "image": "feedthemachine_cd.jpg"
+      }
+    },
+    {
+      "pk": 8,
+      "model": "products.product",
+      "fields": {
+        "sku": "pp5001340162",
+        "name": "Feed The Machine T-shirt",
+        "description": "Loose fitting tee, displaying the ninth album cover!",
+        "price": 19.99,
+        "category": 1,
+        "image_url": "/workspaces/Milestone-project-4-Nickelback/media/feedthemachine_t.jpg",
+        "image": "feedthemachine_t.jpg"
+      }
+    },
+    {
+      "pk": 9,
+      "model": "products.product",
+      "fields": {
+        "sku": "pp5001340163",
+        "name": "Get Rollin' T-shirt",
+        "description": "Loose fitting tee, displaying the latest album cover!",
+        "price": 19.99,
+        "category": 1,
+        "image_url": "/workspaces/Milestone-project-4-Nickelback/media/get_rollin_t.jpg",
+        "image": "get_rollin_t.jpg"
+      }
+    },
+    {
+      "pk": 10,
+      "model": "products.product",
+      "fields": {
+        "sku": "pp5001340164",
+        "name": "Get Rollin'",
+        "description": "Nickelbacks latest studio album!",
+        "price": 9.99,
+        "category": 4,
+        "image_url": "/workspaces/Milestone-project-4-Nickelback/media/getrollin_cd.jpg",
+        "image": "getrollin_cd.jpg"
+      }
+    },
+    {
+      "pk": 11,
+      "model": "products.product",
+      "fields": {
+        "sku": "pp5001340165",
+        "name": "Nickelback Guitar Picks",
+        "description": "An assortment of Nickelback commemorative guitar plectrums!",
+        "price": 7.99,
+        "category": 3,
+        "image_url": "/workspaces/Milestone-project-4-Nickelback/media/guitar_picks.jpg",
+        "image": "guitar_picks.jpg"
+      }
+    },
+    {
+      "pk": 12,
+      "model": "products.product",
+      "fields": {
+        "sku": "pp5001340166",
+        "name": "Nickelback Hat",
+        "description": "Nickelback black cap with logo!",
+        "price": 7.99,
+        "category": 3,
+        "image_url": "/workspaces/Milestone-project-4-Nickelback/media/hat.jpg",
+        "image": "hat.jpg"
+      }
+    },
+    {
+      "pk": 13,
+      "model": "products.product",
+      "fields": {
+        "sku": "pp5001340167",
+        "name": "Here and Now - Vinyl",
+        "description": "Nickelbacks seveth studio album! (Who says Vinyl is dead?!)",
+        "price": 12.99,
+        "category": 4,
+        "image_url": "/workspaces/Milestone-project-4-Nickelback/media/hereandnow_vinyl.jpg",
+        "image": "hereandnow_vinyl.jpg"
+      }
+    },
+    {
+      "pk": 14,
+      "model": "products.product",
+      "fields": {
+        "sku": "pp5001340168",
+        "name": "Nickelback Get Rollin' Hoodie",
+        "description": "Beige Hoodie featuring the latest album with a colourful design!",
+        "price": 29.99,
+        "category": 2,
+        "image_url": "/workspaces/Milestone-project-4-Nickelback/media/hoodie.jpg",
+        "image": "hoodie.jpg"
+      }
+    },
+    {
+      "pk": 15,
+      "model": "products.product",
+      "fields": {
+        "sku": "pp5001340169",
+        "name": "Nickelback Logo Jumper",
+        "description": "Black jumper featuring old Nickelback logo design!",
+        "price": 25.99,
+        "category": 2,
+        "image_url": "/workspaces/Milestone-project-4-Nickelback/media/jummper_2.jpg",
+        "image": "jummper_2.jpg"
+      }
+    },
+    {
+      "pk": 16,
+      "model": "products.product",
+      "fields": {
+        "sku": "pp5001340170",
+        "name": "Nickelback Get Rollin' Jumper",
+        "description": "Black jumper featuring new Nickelback album design!",
+        "price": 25.99,
+        "category": 2,
+        "image_url": "/workspaces/Milestone-project-4-Nickelback/media/Jumper.jpg",
+        "image": "jumper.jpg"
+      }
+    },
+    {
+      "pk": 17,
+      "model": "products.product",
+      "fields": {
+        "sku": "pp5001340171",
+        "name": "Nickelback Logo T-shirt",
+        "description": "Red T-shirt featuring Nickelback logo design!",
+        "price": 19.99,
+        "category": 1,
+        "image_url": "/workspaces/Milestone-project-4-Nickelback/media/logo_tshirt.jpeg",
+        "image": "logo_tshirt.jpg"
+      }
+    },
+    {
+      "pk": 18,
+      "model": "products.product",
+      "fields": {
+        "sku": "pp5001340172",
+        "name": "Nickelback Long Sleeve T-shirt",
+        "description": "Red T-shirt featuring Nickelback writing!",
+        "price": 22.99,
+        "category": 1,
+        "image_url": "/workspaces/Milestone-project-4-Nickelback/media/long_sleeve.jpg",
+        "image": "long_sleeve.jpg"
+      }
+    },
+    {
+      "pk": 19,
+      "model": "products.product",
+      "fields": {
+        "sku": "pp5001340173",
+        "name": "No Fixed Address",
+        "description": "Nickelbacks eighth studio album!",
+        "price": 9.99,
+        "category": 4,
+        "image_url": "/workspaces/Milestone-project-4-Nickelback/media/nofixedaddress_cd.jpg",
+        "image": "nofixedaddress_cd.jpg"
+      }
+    },
+    {
+      "pk": 20,
+      "model": "products.product",
+      "fields": {
+        "sku": "pp5001340174",
+        "name": "San Quentin T-shirt",
+        "description": "Black t-shirt with the latest albums single title!",
+        "price": 19.99,
+        "category": 1,
+        "image_url": "/workspaces/Milestone-project-4-Nickelback/media/sanquentin_t.jpg",
+        "image": "sanquentin_t.jpg"
+      }
+    },
+    {
+      "pk": 21,
+      "model": "products.product",
+      "fields": {
+        "sku": "pp5001340175",
+        "name": "Silver Side Up",
+        "description": "Nickelbacks third studio album!",
+        "price": 9.99,
+        "category": 4,
+        "image_url": "/workspaces/Milestone-project-4-Nickelback/media/silversideup_cd.jpg",
+        "image": "silversideup_cd.jpg"
+      }
+    },
+    {
+      "pk": 22,
+      "model": "products.product",
+      "fields": {
+        "sku": "pp5001340176",
+        "name": "Silver Side Up Hoodie",
+        "description": "Nickelbacks third studio album printed on a Hoodie!",
+        "price": 29.99,
+        "category": 2,
+        "image_url": "/workspaces/Milestone-project-4-Nickelback/media/silversideup_hoodie.jpg",
+        "image": "silversideup_hoodie.jpg"
+      }
+    },
+    {
+      "pk": 23,
+      "model": "products.product",
+      "fields": {
+        "sku": "pp5001340177",
+        "name": "Silver Side Up - Vinyl",
+        "description": "Nickelbacks third studio album! (Who says Vinyl is dead?!)",
+        "price": 12.99,
+        "category": 4,
+        "image_url": "/workspaces/Milestone-project-4-Nickelback/media/silversideup_vinyl.jpg",
+        "image": "silversideup_vinyl.jpg"
+      }
+    },
+    {
+      "pk": 24,
+      "model": "products.product",
+      "fields": {
+        "sku": "pp5001340178",
+        "name": "The Long Road - Vinyl",
+        "description": "Nickelbacks fourth studio album! (Who says Vinyl is dead?!)",
+        "price": 12.99,
+        "category": 4,
+        "image_url": "/workspaces/Milestone-project-4-Nickelback/media/thelongroad_vinyl.jpg",
+        "image": "thelongroad_vinyl.jpg"
+      }
+    },
+    {
+      "pk": 25,
+      "model": "products.product",
+      "fields": {
+        "sku": "pp5001340179",
+        "name": "The Long Road",
+        "description": "Nickelbacks fourth studio album!",
+        "price": 9.99,
+        "category": 4,
+        "image_url": "/workspaces/Milestone-project-4-Nickelback/media/thelongroad_cd.jpg",
+        "image": "thelongroad_cd.jpg"
+      }
+    },
+    {
+      "pk": 26,
+      "model": "products.product",
+      "fields": {
+        "sku": "pp5001340180",
+        "name": "The State - Vinyl",
+        "description": "Nickelbacks second studio album! (Who says Vinyl is dead?!)",
+        "price": 12.99,
+        "category": 4,
+        "image_url": "/workspaces/Milestone-project-4-Nickelback/media/thestate_vinyl.jpg",
+        "image": "thestate_vinyl.jpg"
+      }
+    },
+    {
+      "pk": 27,
+      "model": "products.product",
+      "fields": {
+        "sku": "pp5001340181",
+        "name": "The State",
+        "description": "Nickelbacks second studio album!",
+        "price": 9.99,
+        "category": 4,
+        "image_url": "/workspaces/Milestone-project-4-Nickelback/media/thestate_cd.jpg",
+        "image": "thestate.jpg"
+      }
+    },
+    {
+      "pk": 28,
+      "model": "products.product",
+      "fields": {
+        "sku": "pp5001340182",
+        "name": "Nickelback Zip Hoodie",
+        "description": "Plain Black Zip Hoodie with Nickelback Writing!",
+        "price": 27.99,
+        "category": 2,
+        "image_url": "/workspaces/Milestone-project-4-Nickelback/media/zip_hoodie.webp",
+        "image": "zip_hoodie.webp"
+      }
     }
-]
+  ]
