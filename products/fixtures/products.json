@@ -8,9 +8,60 @@
         "description": "Loose fitting tee, displaying the first ever album cover!",
         "price": 19.99,
         "category": 1,
-        "rating": 4.6,
         "image_url": "/workspaces/Milestone-project-4-Nickelback/media/curb_tee.jpg",
         "image": "curb_tee.jpg"
+      }
+    },
+    {
+      "pk": 2,
+      "model": "products.product",
+      "fields": {
+        "sku": "pp5001340156",
+        "name": "All The Right Reasons",
+        "description": "Nickelbacks fourth, multi platinum album!",
+        "price": 9.99,
+        "category": 4,
+        "image_url": "/workspaces/Milestone-project-4-Nickelback/media/alltherightreasons_cd.jpg",
+        "image": "alltherightreasons_cd.jpg"
+      }
+    },
+    {
+      "pk": 3,
+      "model": "products.product",
+      "fields": {
+        "sku": "pp5001340157",
+        "name": "All The Right Reasons - Vinyl",
+        "description": "Nickelbacks fourth, multi platinum album! (Who says Vinyl is dead?!)",
+        "price": 12.99,
+        "category": 4,
+        "image_url": "/workspaces/Milestone-project-4-Nickelback/media/alltherightreasons_vinyl.jpg",
+        "image": "alltherightreasons_vinyl.jpg"
+      }
+    },
+    {
+      "pk": 4,
+      "model": "products.product",
+      "fields": {
+        "sku": "pp5001340155",
+        "name": "Nickelback Buttons",
+        "description": "Nickelback decorative Buttons",
+        "price": 6.99,
+        "category": 3,
+        "image_url": "/workspaces/Milestone-project-4-Nickelback/media/buttons.jpg",
+        "image": "buttons.jpg"
+      }
+    },
+    {
+      "pk": 5,
+      "model": "products.product",
+      "fields": {
+        "sku": "pp5001340155",
+        "name": "Curb",
+        "description": "Nickelbacks first album!",
+        "price": 9.99,
+        "category": 4,
+        "image_url": "/workspaces/Milestone-project-4-Nickelback/media/curb_cd.jpg",
+        "image": "curb_cd.jpg"
       }
     }
 ]
