@@ -203,7 +203,7 @@
         "description": "Black jumper featuring new Nickelback album design!",
         "price": 25.99,
         "category": 2,
-        "image_url": "/workspaces/Milestone-project-4-Nickelback/media/Jumper.jpg",
+        "image_url": "/workspaces/Milestone-project-4-Nickelback/media/jumper.jpg",
         "image": "jumper.jpg"
       }
     },
@@ -217,7 +217,7 @@
         "price": 19.99,
         "category": 1,
         "image_url": "/workspaces/Milestone-project-4-Nickelback/media/logo_tshirt.jpeg",
-        "image": "logo_tshirt.jpg"
+        "image": "logo_tshirt.jpeg"
       }
     },
     {
@@ -347,7 +347,7 @@
         "price": 9.99,
         "category": 4,
         "image_url": "/workspaces/Milestone-project-4-Nickelback/media/thestate_cd.jpg",
-        "image": "thestate.jpg"
+        "image": "thestate_cd.jpg"
       }
     },
     {
