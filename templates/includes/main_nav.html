@@ -7,8 +7,8 @@
                 All Products
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="all-products-link">
-                <a href="" class="dropdown-item">By Price</a>
-                <a href="" class="dropdown-item ">By Category</a>
+                <a href="{% url 'products' %}?sort=price&direction=asc" class="dropdown-item">By Price</a>
+                <a href="{% url 'products' %}?sort=category&direction=asc" class="dropdown-item ">By Category</a>
                 <a href="{% url 'products' %}" class="dropdown-item">All Products</a>
             </div>
         </li>
@@ -20,9 +20,9 @@
                 Merchandise
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="clothing-link">
-                <a href="" class="dropdown-item">T-shirts</a>
-                <a href="" class="dropdown-item">Jumpers & Sweaters</a>
-                <a href="" class="dropdown-item">Accessories</a>
+                <a href="{% url 'products' %}?category=t_shirts" class="dropdown-item">T-shirts</a>
+                <a href="{% url 'products' %}?category=jumpers" class="dropdown-item">Jumpers & Sweaters</a>
+                <a href="{% url 'products' %}?category=accessories" class="dropdown-item">Accessories</a>
             </div>
         </li>
 
@@ -33,7 +33,7 @@
                 Music
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="clothing-link">
-                <a href="" class="dropdown-item">Albums</a>
+                <a href="{% url 'products' %}?category=albums" class="dropdown-item">Albums</a>
                 <a href="" class="dropdown-item">Tickets</a>
             </div>
         </li>
