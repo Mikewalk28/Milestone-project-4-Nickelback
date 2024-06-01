@@ -26,7 +26,7 @@ class UserReview(models.Model):
         return str(self.title)
 
     def get_absolute_url(self):
-        """Get url after user adds/edits recipe"""
+        """Get url after user adds/edits review"""
         return reverse('review_detail', kwargs={'pk': self.pk})
 
     

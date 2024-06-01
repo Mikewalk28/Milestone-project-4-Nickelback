@@ -1,14 +1,21 @@
-{% extends 'base.html' %}
-{% block title %}{{ review.title }}{% endblock %}
+{% extends "base.html" %}
+{% load static %}
+
+{% block page_header %}
+    <div class="container header-container">
+        <div class="row">
+            <div class="col"></div>
+        </div>
+    </div>
+{% endblock %}
+
 {% block content %}
-
-
 <div class="container p-0">
     <div class="container pt-3">
-        <div class="card mb-3 recipe-detail-card">
+        <div class="card mb-3 review-detail-card">
             <div class="row no-gutters">
                 <div class="col-12 col-md-4">
-                    <img src=" {{ review.image.url }}" alt="review image" class="review-detail-img">
+                    <img src="{{ review.image.url }}" alt="review image" class="review-detail-img">
                 </div>
                 <div class="col-12 col-md-8">
                     <div class="card-body recipe-detail-outer py-2">

@@ -1,20 +1,28 @@
 {% extends "base.html" %}
-{% block title %}Add Review{% endblock %}
-{% block content %}
+{% load static %}
 
-<div class="container">
-    <h1 class="page-title">Add Review</h1>
+{% block page_header %}
+    <div class="container header-container">
+        <div class="row">
+            <div class="col"></div>
+        </div>
+    </div>
+{% endblock %}
+
+{% block content %}
+<div class="container-fluid">
+    <h1 class="page-title text-white text-center">Add Review</h1>
     <hr class="home-break">
     <br>
     <div class="row justify-content-center ">
         {% if user.is_authenticated %}
         <div class="col-11 col-md-8 col-lg-6 mt-3 add-recipe-outer">
             <!--  Add Review Form -->
-            <form method="post" class="add-review mb-5" enctype="multipart/form-data">
+            <form method="post" class="add-review mb-5 text-white" enctype="multipart/form-data">
                 {{ form.as_p }}
                 {% csrf_token %}
-                <button type="submit" class="btn btn-outline-dark">Submit</button>
-                <a class="btn btn btn-outline-dark m-2">Cancel</a>
+                <button type="submit" class="btn btn-outline-dark text-white">Submit</button>
+                <a class="btn btn btn-outline-dark m-2 text-white">Cancel</a>
             </form>
         </div>
         {% endif %}

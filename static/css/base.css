@@ -50,15 +50,15 @@ body {
 }
 
 .btn-outline-black {
-    background: white;
-    color: black !important; /* use important to override link colors for <a> elements */
+    background: #ff003a;
+    color: white !important; 
     border: 1px solid black;
 }
 
 .btn-outline-black:hover,
 .btn-outline-black:active,
 .btn-outline-black:focus {
-    background: black;
+    background: #ff003a;
     color: white !important;
 }
 
@@ -108,6 +108,10 @@ a.category-badge > span.badge:hover {
     cursor: pointer;
 }
 
+.add-review {
+    padding-top: 10px;
+
+}
 /* -------------------------------- Media Queries */
 
 /* Slightly larger container on xl screens */
