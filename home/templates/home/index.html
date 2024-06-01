@@ -22,24 +22,21 @@
                         class="book-now-button btn btn-lg rounded-0 text-uppercase py-3 text-white">Watch Now!</button>
                     </h3>
                     <div id="id01" class="modal">
-                        <span onclick="document.getElementById('id01').style.display='none'" class="close"
-                            title="Close Modal">X</span>
-                        <form class="modal-content" method="POST" action="https://formdump.codeinstitute.net/">
-                            <div class="container-fluid">
-                                <h1>Sign Up</h1>
-                                <p>Please fill in this form to create an account to get access to newsletter and tour dates!</p>
-                                <hr>
-                                <label for="email"><b>Email</b></label>
-                                <input type="text" placeholder="Enter Email" name="email" required id="email">
-                                <label for="email-repeat"><b>Repeat Email</b></label>
-                                <input type="text" placeholder="Repeat email" name="email-repeat" id="email-repeat" required>
-                                <p>By creating an account you agree to our <a href="#" style="color:dodgerblue">Terms &
-                                        Privacy</a>.</p>
-                                <div class="clearfix">
-                                    <button type="submit" class="signup">Sign Up</button>
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                  <button type="button" onclick="document.getElementById('id01').style.display='none'" class="close"
+                                  title="Close Modal" data-dismiss="modal">&times;</button>
+                                  <h4 class="modal-title text-center">Streaming Sites:</h4>
+                                </div>
+                                <div class="modal-body">
+                                    <button type="button" class="btn-black">
+                                    <a href="https://tv.apple.com/gb/movie/hate-to-love-nickelback/umc.cmc.3njsav347ywauwgj7olybyjmw"
+                                     target="_blank">Apple TV</a></button>
+                                    <button type="button" class="btn-black">
+                                    <a href="https://www.amazon.co.uk/Hate-Love-Nickelback-Chad-Kroeger/dp/B0CY2ZTRNR"
+                                     target="_blank">Amazon Prime</a></button>
                                 </div>
                             </div>
-                        </form>
                     </div>
                 </div>
             </div>
