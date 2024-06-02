@@ -29,6 +29,20 @@
             </div>
         </div>
     </div>
+    {% if user.is_authenticated and review.author == user %}
+        <span>
+            <a class="action-btn btn btn-info" href="{% url 'update_review' review.slug %}"
+                aria-label="edit-review">
+                <i class="fas fa-edit"></i>
+            </a>
+        </span>
+        <span>
+            <a class="action-btn btn btn-info" href="{% url 'delete_review' review.slug %}"
+                aria-label="delete-review">
+                <i class="fas fa-times"></i>
+            </a>
+        </span>
+    {% endif %}
  
 
 {% endblock content %}
