@@ -1,0 +1,2 @@
+web: gunicorn nickelback_webpage.wsgi:application
+web: python run.py
