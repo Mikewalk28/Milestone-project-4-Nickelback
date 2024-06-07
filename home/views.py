@@ -64,7 +64,7 @@ class DeleteReview(
     This view is used to allow logged in users to delete their own review
     """
     model = UserReview
-    template_name = 'delete_review.html'
+    template_name = 'delete_userreview.html'
     success_message = "Review deleted successfully"
     
 

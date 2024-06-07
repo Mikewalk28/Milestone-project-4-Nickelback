@@ -18,31 +18,31 @@
                     <img src="{{ review.image.url }}" alt="review image" class="review-detail-img">
                 </div>
                 <div class="col-12 col-md-8">
-                    <div class="card-body recipe-detail-outer py-2">
+                    <div class="card-body review-detail-outer py-2">
                         <div>
                             <h1 class="card-title page-title review-title text-left">{{ review.title }}</h1>
                         </div>
                         <p class="card-text">Author: {{ review.user }}</p>
                         <p class="card-text">Author: {{ review.description }}</p>
+                        <span>
+                            <button type="submit" class="btn-black btn-outline-dark text-white">
+                            <a class="action-btn btn" href="{% url 'add_review' %}"
+                                aria-label="edit-review">
+                                Edit</button>
+                            </a>
+                        </span>
+                        <span>
+                            <button type="submit" class="btn-black btn-outline-dark text-white">
+                            <a class="action-btn btn" href=""
+                                aria-label="delete-review">
+                                Delete</button>
+                            </a>
+                        </span>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-    {% if user.is_authenticated and review.author == user %}
-        <span>
-            <a class="action-btn btn btn-info" href="{% url 'update_review' review.slug %}"
-                aria-label="edit-review">
-                <i class="fas fa-edit"></i>
-            </a>
-        </span>
-        <span>
-            <a class="action-btn btn btn-info" href="{% url 'delete_review' review.slug %}"
-                aria-label="delete-review">
-                <i class="fas fa-times"></i>
-            </a>
-        </span>
-    {% endif %}
  
 
 {% endblock content %}
