@@ -10,6 +10,10 @@ class Migration(migrations.Migration):
     ]
 
     operations = [
+        migrations.AlterModelOptions(
+            name='category',
+            options={'verbose_name_plural': 'Categories'},
+        ),
         migrations.AddField(
             model_name='product',
             name='has_sizes',
