@@ -286,14 +286,9 @@ a.category-badge > span.badge:hover {
     color: black;
 }
 
-form.login {
-    margin-top: 100px;
-    color: white;
-    background-color: black;
-    width: min-content;
-}
-
-form.password_reset {
+form.login,
+form.password_reset,
+form.signup {
     margin-top: 100px;
     color: white;
     background-color: black;
