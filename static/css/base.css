@@ -286,6 +286,20 @@ a.category-badge > span.badge:hover {
     color: black;
 }
 
+form.login {
+    margin-top: 100px;
+    color: white;
+    background-color: black;
+    width: min-content;
+}
+
+form.password_reset {
+    margin-top: 100px;
+    color: white;
+    background-color: black;
+    width: min-content;
+}
+
 
 /* -------------------------------- Media Queries */
 
