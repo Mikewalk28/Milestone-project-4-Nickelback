@@ -32,12 +32,12 @@ def bag_contents(request):
                     'size': size,
                 })
 
-    if total < 0:
+    if total > 0:
         delivery = 3.99
     else:
         delivery = 0
     
-    grand_total = total
+    grand_total = delivery
     
     context = {
         'bag_items': bag_items,
