@@ -24,9 +24,9 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = 'django-insecure-80d7x=0as3luflm8#c#t%sa3m#c($rx!xyhqj0oidegg32nqa0'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
-ALLOWED_HOSTS = ['8000-mikewalk28-milestonepro-36dte5psjpe.ws.codeinstitute-ide.net']
+ALLOWED_HOSTS = ['nickelback-webpage.herokuapp.com', 'localhost']
 
 
 # Application definition
@@ -119,6 +119,7 @@ else:
             'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
         }
     }
+
 
 
 
