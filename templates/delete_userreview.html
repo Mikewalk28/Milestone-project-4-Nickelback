@@ -1,23 +1,34 @@
 {% extends "base.html" %}
 {% block title %}Delete Review{% endblock %}
-{% block content %}
-
-<div class="container">
-    <h1 class="page-title">Delete Review</h1>
-    <hr class="home-break">
-    <br>
-    <p class="text-center mt-3">Are you sure you want to delete this review?</p>
-    <div class="row justify-content-center">
-        <div class="col-11 col-md-6 col-lg-4 mt-3">
-            <!-- Delete Review Form -->
-            <form class="text-center" method="POST">
-                {%  csrf_token  %}
-                <div>
-                    <button class="btn btn-danger m-2" type="submit">Delete</button>
-                    <a class="btn btn-outline-dark m-2" href="{%  url 'review_detail' review.pk  %}">Cancel</a>
-                </div>
-            </form>
+{% block page_header %}
+    <div class="container header-container">
+        <div class="row">
+            <div class="col"></div>
         </div>
+    </div>
+{% endblock %}
+
+{% block content %}
+<div class="container p-0">
+    <div class="container pt-3">
+        <div class="card mb-3 review-detail-card">
+        <h1 class="page-title">Delete Review</h1>
+        <hr class="home-break">
+        <br>
+        <p class="text-center mt-3">Are you sure you want to delete this review?</p>
+        <div class="row justify-content-center">
+            <div class="col-11 col-md-6 col-lg-4 mt-3">
+                <!-- Delete Review Form -->
+                
+                <form class="text-center" method="POST">
+                    {%  csrf_token  %}
+                    <div>
+                        <button class="btn btn-danger m-2" type="submit">Delete</button>
+                        <a class="btn btn-outline-dark m-2" href="{%  url 'review_detail' object.pk  %}">Cancel</a>
+                    </div>
+                </form>
+            </div>
+        </div
     </div>
 </div>
 

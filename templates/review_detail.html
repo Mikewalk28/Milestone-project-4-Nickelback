@@ -25,10 +25,9 @@
                         <p class="card-text">Author: {{ review.user }}</p>
                         <p class="card-text">Author: {{ review.description }}</p>
                         <span>
-                            <button type="submit" class="btn-black btn-outline-dark">
-                            <a class="action-btn btn text-white" href="{% url 'add_review' %}"
-                                aria-label="edit-review">
-                                Edit</button>
+                            <a class="btn-black btn-outline-dark btn text-white" href="{% url 'edit_review' review.pk%}"
+                            aria-label="edit-review">
+                            Edit
                             </a>
                         </span>
                         <span>

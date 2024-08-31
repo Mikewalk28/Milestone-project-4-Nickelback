@@ -1,0 +1,51 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block page_header %}
+    <div class="container header-container">
+        <div class="row">
+            <div class="col"></div>
+        </div>
+    </div>
+{% endblock %}
+
+{% block content %}
+<div class="container p-0">
+    <a class="btn-black btn-outline-dark btn"  href="{% url 'add_review' %}">Add your review</a>
+    <div class="container pt-3">
+        {%for review in review_list%}
+            <div class="card mb-3 review-detail-card">
+                <div class="row no-gutters">
+                    <div class="col-4">
+                        <img src="{{ review.cover_image.url }}" alt="review image" class="review-detail-img">
+                    </div>
+                    <div class="col-8">
+                        <div class="card-body review-detail-outer py-2">
+                            <div>
+                                <h1 class="card-title page-title review-title text-left">{{ review.title }}</h1>
+                            </div>
+                            <p class="card-text">Author: {{ review.user }}</p>
+                            <p class="card-text">Author: {{ review.description }}</p>
+                            <span>
+                               
+                                <a class="btn-black btn-outline-dark btn text-white" href="{% url 'edit_review' review.pk%}"
+                                    aria-label="edit-review">
+                                    Edit
+                                </a>
+                            </span>
+                            <span>
+                               
+                                <a class="btn-black btn-outline-dark btn text-white" href="{% url 'delete_review' review.pk%}"
+                                aria-label="edit-review">
+                                Delete
+                            </a>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        {%endfor%}
+    </div>
+ 
+
+{% endblock content %}
